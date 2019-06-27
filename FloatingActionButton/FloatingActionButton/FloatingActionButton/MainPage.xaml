@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:floatingActionButton="clr-namespace:FloatingActionButton;assembly=FloatingActionButton"
              mc:Ignorable="d"
              x:Class="FloatingActionButton.MainPage">
 
@@ -11,6 +12,10 @@
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+
+        <floatingActionButton:FloatingActionButton ButtonColor="Green"
+                                                   HeightRequest="50"
+                                                   WidthRequest="50"/>
     </StackLayout>
 
 </ContentPage>
