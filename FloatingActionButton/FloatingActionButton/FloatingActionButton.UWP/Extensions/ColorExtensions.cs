@@ -7,7 +7,7 @@ namespace FloatingActionButton.UWP
     {
         public static SolidColorBrush ToUwpSolidColorBrush(this Color color)
         {
-            return new SolidColorBrush(Windows.UI.Color.FromArgb((byte)color.A, (byte)color.R, (byte)color.G, (byte)color.B));
+            return new SolidColorBrush(Windows.UI.Color.FromArgb(color.A.DoubleToByte(), color.R.DoubleToByte(), color.G.DoubleToByte(), color.B.DoubleToByte()));
         }
     }
 }

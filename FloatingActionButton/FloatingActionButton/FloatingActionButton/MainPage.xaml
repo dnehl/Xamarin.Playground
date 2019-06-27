@@ -13,8 +13,10 @@
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
 
-        <floatingActionButton:FloatingActionButton ButtonColor="Green"
+        <floatingActionButton:FloatingActionButton ButtonColor="Blue"
                                                    HeightRequest="50"
+                                                   Margin="20"
+                                                   HorizontalOptions="End"
                                                    WidthRequest="50"/>
     </StackLayout>
 
