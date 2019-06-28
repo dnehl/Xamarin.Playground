@@ -28,8 +28,8 @@ namespace FloatingActionButton.Droid.Renderer
 
             var elementImage = Element.ImageSource;
 
-            if (elementImage != null)
-                fab.SetImageDrawable(Context.GetDrawable(elementImage.ToString()));
+            if (elementImage != null && elementImage is FileImageSource fileImage)
+                fab.SetImageDrawable(Context.GetDrawable(fileImage.File));
 
             fab.Click += (sender, args) => {
                 ((IButtonController)Element).SendClicked(); };

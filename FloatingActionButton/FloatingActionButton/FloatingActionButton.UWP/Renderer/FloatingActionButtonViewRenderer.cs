@@ -29,17 +29,19 @@ namespace FloatingActionButton.UWP
             Element.HeightRequest = 50;
             Element.CornerRadius = 25;
             Element.BorderWidth = 0;
-            Element.Text = null;
+
 
             var col = ((FormsFloatingActionButton)Element).ButtonColor;
             Element.BackgroundColor = new Xamarin.Forms.Color(col.R.DoubleToByte(), col.G.DoubleToByte(), col.B.DoubleToByte(), col.A.DoubleToByte());
+
         }
 
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
+            
             if (e.PropertyName == "BackgroundColor")
                 Control.BackgroundColor = ((FormsFloatingActionButton)Element).ButtonColor.ToUwpSolidColorBrush();
-
+            
             base.OnElementPropertyChanged(sender, e);
         }
     }
