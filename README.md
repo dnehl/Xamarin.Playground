@@ -11,6 +11,7 @@ custom floating action button for Xamarin.Android and Xamarin.UWP. (IOS will com
 This control is using platform specific view render and a xamarin.forms control. 
 So it is very easy to use:
 
+```c#
 <floatingActionButton:FloatingActionButton ButtonColor="Blue"
                                                    HeightRequest="50"
                                                    Margin="20"
@@ -23,5 +24,6 @@ So it is very easy to use:
                 </OnPlatform>
             </floatingActionButton:FloatingActionButton.ImageSource>
         </floatingActionButton:FloatingActionButton>
-        
-      
+```
+
+![Alt text](/Screenshots/FAB/androidfab.png?raw=true "Android FAB")![Alt text](/Screenshots/FAB/uwpfab.png?raw=true "UWP FAB")
