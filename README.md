@@ -48,7 +48,7 @@ RadioButtonGroup.ItemsSource = new[]
                "Italy"
             };
 ```
-![Alt text](/Screenshots/RadioButton/android.png?raw=true "Android")![Alt text](/Screenshots/RadioButton/UWP.png?raw=true "UWP")
+![Alt text](/Screenshots/RadioButton/android.png?raw=true "Android")![Alt text](/Screenshots/RadioButton/UWP.PNG?raw=true "UWP")
 
 
 # ToDo
