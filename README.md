@@ -28,11 +28,33 @@ So it is very easy to use:
 
 ![Alt text](/Screenshots/FAB/androidfab.png?raw=true "Android FAB")![Alt text](/Screenshots/FAB/uwpfab.png?raw=true "UWP FAB")
 
+# Radio Button
+custom radio button for Xamarin.Android and Xamarin.UWP (iOS will coming soon).
+This control is using platform specific view renderer and a xamarin.forms control.
+For using you have to do the following:
+
+```xaml
+        <radioButton:RadioButtonGroup x:Name="RadioButtonGroup"/>
+```
+
+For the RadioButtons you have to fill the ItemSource in the code behind or via Binding.
+
+``` c#
+RadioButtonGroup.ItemsSource = new[]
+            {
+               "Austria",
+               "Germany", 
+               "France", 
+               "Italy"
+            };
+```
+![Alt text](/Screenshots/RadioButton/android.png?raw=true "Android")![Alt text](/Screenshots/RadioButton/UWP.png?raw=true "UWP")
 
 # ToDo
 - [x] FAB
 - [x] FAB.iOS
-- [ ] RadioButton
+- [x] RadioButton
+- [ ] RadioButton.iOS
 - [ ] QuizlyBears
 - [ ] OrderReminder
 - [ ] Map with custom icons
